@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>JS RAY TRACEING EXPERIMENT OWO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700,900"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+		<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+		<script src="js/engine/util/quantum/Utilities.js"></script>
+		<script src="js/engine/util/quantum/Gauss.js"></script>
+		<script src="js/engine/util/quantum/Vector.js"></script>
+		<script src="js/engine/util/quantum/SquareMatrix.js"></script>
+		<script src="js/engine/util/atom/Ray.js"></script>
+		<script src="js/engine/util/atom/Transform.js"></script>
+		<script src="js/engine/util/atom/Color.js"></script>
+		<script src="js/engine/util/atom/CamSettings.js"></script>
+		<script src="js/engine/util/Stageable.js"></script>
+		<script src="js/engine/util/Null.js"></script>
+		<script src="js/engine/util/Triangle.js"></script>
+		<script src="js/engine/util/Mesh.js"></script>
+		<script src="js/engine/util/Light.js"></script>
+		<script src="js/engine/util/Camera.js"></script>
+		<script src="js/engine/Scene.js"></script>
+
+		<script src="js/main.js"></script>
+	</head>
+
+	<body>
+
+		<div class="container" id="test">
+            <div id=prog></div>
+			<canvas id="canvas"></canvas>
+            <div class="row">
+                <input id="resolution" type="range" min="50" max="2000" step="50" value="500" />
+                <h3 id="resolutionLabel">Resolution: 500px</h3>
+                <button id="render-start" class="button">Start render</button>
+            </div>
+			<!-- <input id="obj-import-file" type="file" /> -->
+        </div>
+    
+	</body>
+</html>

@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+raster = [...]
+raster_np_rgb = np.reshape(np.array([[color >> 16, (color >> 8) & 0xFF, color & 0xFF] for color in raster]), [300*5,600*5,3])
+fig, ax = plt.subplots()
+ax.imshow(raster_np_rgb)
+plt.show()
